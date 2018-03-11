@@ -1,8 +1,5 @@
 @echo off
 mkdir kopia
-cd download
-for %%f in (download) do copy path1 path2
-cd ..
+for %%f in (.\download) do copy .\download .\kopia
 tree /F
-:koniec
 pause
