@@ -1,6 +1,5 @@
 @echo off
-rmdir kopia
-mkdir kopia
+if not exist ".\kpoia" mkdir kopia
 for %%f in (.\download) do copy .\download .\kopia
 tree /F
 pause
