@@ -1,0 +1,10 @@
+@echo off
+if "%1" == "" goto :brak_parametru
+goto :wykonaj
+:brak_parametru
+	echo Brak parametru! 
+	goto :koniec
+:wykonaj
+for /f %%i in (%1) do mkdir %%i
+tree /F
+:koniec
