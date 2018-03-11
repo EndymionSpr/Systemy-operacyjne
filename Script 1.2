@@ -1,7 +1,8 @@
 @echo off
 mkdir kopia
 cd download
-for %%f in (download) do copy E:\Sysop\Download E:\Sysop\kopia
+for %%f in (download) do copy .Download .\kopia
+cd ..
 tree /F
 :koniec
 pause
