@@ -1,0 +1,7 @@
+for /f %%f in ('dir /S /B %1\*.*') do (
+		for /f %%k in ('dir /A:D /S /B %2') do (
+			if "%%~nf" == "%%~nk" (
+				move %%f %%k
+			)
+		)
+	)
